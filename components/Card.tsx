@@ -43,7 +43,7 @@ export default function Cards(props:CardProps) {
 
                 <div className="w-[479px] h-[80px]  flex justify-between items-center ">
                     <div className="w-[126px] h-[72px]  pt-[12px] pl-[8px] bg-[#EEF2FF] rounded-[4px] ">
-                        <div className="w-[84px] h-[48px] flex flex-col justify-between text-[14px] relative ">
+                        <div className="w-[94px] h-[48px] flex flex-col justify-between text-[14px] relative ">
                             <span className="text-[#64748B] absolute bottom-7 left-2">{props.box11}</span>
                             <div className=" text-[#64748B] flex flex-row p-2  absolute  top-6">
                                 <div>

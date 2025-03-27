@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 export default function MentorPage() {
     const [dropdowns, setDropdowns] = useState<boolean[]>([false, false, false, false]);
     const [searchText, setSearchText] = useState("");
-    const [showDropdown, setShowDropdown] = useState(true);
+    const [showDropdown, setShowDropdown] = useState(false);
     const [recentSearches, setRecentSearches] = useState(["React", "Next.js"]);
     const [suggestions, setSuggestions] = useState<string[]>([]);
     const [isLoggedIn, setLogIn] = useState<boolean>(false);
@@ -27,14 +27,19 @@ export default function MentorPage() {
                 setShowNoResult(false);
             }, 5000);
             return () => clearTimeout(timer);
+        } else {
+            setShowNoResult(false); 
         }
-    }, [searchText, suggestions]);
+    }, [searchText, suggestions, showNoResult]); 
+    
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
+            
             if (inputRef.current && !inputRef.current.contains(event.target as Node)) {
                 setShowDropdown(false);
             }
+
         }
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);

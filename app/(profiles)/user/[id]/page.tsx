@@ -102,6 +102,10 @@ const HomePage = () => {
             b1src: '/icons/vediocam.svg',
             b2src: '/icons/message.svg',
             b3src: '/icons/currency.svg',
+            onPress:()=>{
+                const route = `/user/${id}/resumeReview`;
+                router.push(route);
+             }
         },
         2: {
             title: '1 month career guidance full confidence',

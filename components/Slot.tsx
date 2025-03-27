@@ -5,6 +5,7 @@ import TimeSlotComponent from './Test';
 
 export default function Slot() {
     const [selectedDate, setSelectedDate] = useState(new Date()); // Store selected date
+    const [down,setDown]= useState<boolean>(false);
 
     return (
         <div className="w-[1140px] h-[660px] border-1 border-solid border-[#CBD5E1] rounded-[12px] p-[24px] bg-[#FFFFFF] flex flex-col gap-[24px] relative">
@@ -30,9 +31,26 @@ export default function Slot() {
                 </div>
             </div>
 
-            {/* Time Zone Selection */}
-            <div className="w-full h-[40px] border-1 border-solid border-[#CBD5E1] rounded-xl text-[#0F172A] font-[500] ml-2 flex flex-row justify-between items-center relative">
-                <button className="ml-2 flex flex-row gap-160">(GMT + 5:30) Chennai, Kolkata, Mumbai, New Delhi (IST)</button>
+            <div className="w-full h-[40px] border-1 border-solid border-[#CBD5E1] rounded-xl text-[#0F172A] font-[500] ml-2 flex flex-row justify-between items-center relative" >
+                <div className='flex flex-row justify-between items-center text-[#334155] '>
+                    <button className='ml-2 flex flex-row gap-160 ' onClick={() => {
+                        setDown(prev => !prev);
+                    }}>(GMT + 5:30) Chennai, Kolkata, Mumbai, New Delhi(IST)
+                        <Image
+                            src={!down ? '/icons/expand.svg' : '/icons/contract.svg'}
+                            alt='icons'
+                            height={20}
+                            width={30}
+                        />
+                    </button>
+                </div>
+                {down && (
+                    <div className='bg-white rounded-xl w-[950px] h-[200px] absolute top-15 left-1  border-2 border-amber-300'>
+                        Other time zones
+
+                    </div>
+                )}
+
             </div>
 
             {/* Confirm Button */}
