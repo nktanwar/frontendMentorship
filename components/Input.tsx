@@ -67,7 +67,7 @@ export default function TextBox({ setIsActive }: MyComponentProps) {
                         <Image src='/icons/12.svg' alt="Numbered List" width={24} height={24} />
                     </button>
                     <button type="button" title="Link">
-                        <Image src='/icons/Link.svg' alt="Link" width={24} height={24} />
+                        <Image src='/icons/link.svg' alt="Link" width={24} height={24} />
                     </button>
 
                     {/* Photo Upload Button */}
