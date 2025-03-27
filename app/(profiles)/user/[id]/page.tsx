@@ -18,6 +18,7 @@ const HomePage = () => {
 
     const router = useRouter();
     const params = useParams();
+    const [count, setCount] = useState<string>("20 ");
     const id = params?.id;
 
 
@@ -85,10 +86,10 @@ const HomePage = () => {
             b1src: '/icons/vediocam.svg',
             b2src: '/icons/schedule.svg',
             b3src: '/icons/currency.svg',
-            onPress:()=>{
+            onPress: () => {
                 const route = `/user/${id}/userDetail`;
                 router.push(route);
-             }
+            }
         },
         1: {
             title: 'Resume Review',
@@ -102,10 +103,10 @@ const HomePage = () => {
             b1src: '/icons/vediocam.svg',
             b2src: '/icons/message.svg',
             b3src: '/icons/currency.svg',
-            onPress:()=>{
+            onPress: () => {
                 const route = `/user/${id}/resumeReview`;
                 router.push(route);
-             }
+            }
         },
         2: {
             title: '1 month career guidance full confidence',
@@ -207,22 +208,44 @@ const HomePage = () => {
     return (
         <div className="w-full h-full">
             <div className=' flex flex-row w-full h-[230px] border-[2px] border-[#E2E8F0] justify-center items-center mb-8  '>
-                
-
-                <div className="w-[1200px] h-[226px]  p-8 flex rounded-[12px]  text-[#334155] font-dm-sans gap-3 ">
-
-                    <Image src={user.src} alt="Mentor" width={190} height={170} />
 
 
+                <div className="w-[1200px] h-[246px]  p-8 flex rounded-[12px]  text-[#334155] font-dm-sans gap-3 ">
 
-                    <div className="w-[920px] h-[168px] flex flex-col justify-between gap-5">
+                    <Image src={user.src} alt="Mentor" width={220} height={220} />
 
-                        <div className="h-[60px] ">
-                            <div className="h-[28px]  flex items-center justify-between text-[20px]">
+
+
+                    <div className="w-[920px] h-[178px] flex flex-col justify-between gap-5">
+
+                        <div className="h-[120px] ">
+                            <div className="h-[38px]  flex items-center justify-between text-[20px]">
                                 <p className="font-semibold mb-4">{user.name}</p>
-                                <button className="h-[28px] w-[98px] bg-[#334155] text-white rounded-lg text-[12px] p-1"
-                                 
-                                >View Profile</button>
+                                <div >
+                                    <p className='bg-[#E5E7EB] text-[16px] font-[700] w-[115px] h-[34px] flex justify-center items-center rounded-xl '>{count}Session
+
+                                    </p>
+
+                                    <div className='flex flex-row w-[40px] h-[20px] mt-1 gap-1'>
+                                        <Image
+                                            src='/icons/linkedin.svg' alt="socials" width={20} height={20}></Image>
+                                             <Image
+                                            src='/icons/insta.svg' alt="socials" width={20} height={20}></Image>
+                                             <Image
+                                            src='/icons/newS.svg' alt="socials" width={20} height={20}></Image>
+                                             <Image
+                                            src='/icons/x.svg' alt="socials" width={20} height={20}></Image>
+                                             <Image
+                                            src='/icons/share.svg' alt="socials" width={20} height={20}></Image>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+
                             </div>
 
                             <div className="text-[18px] font-medium font-dm-sans"
@@ -231,6 +254,7 @@ const HomePage = () => {
 
 
                         <div className="h-[96px] bg-[#F1F5F9] p-3 rounded-[6px] gap-[10px] text-[14px] font-medium font-dm-sans">{user.desc}</div>
+
                     </div>
                 </div>
 
@@ -324,7 +348,7 @@ const HomePage = () => {
 
                                 <p className='flex flex-row ml-4'>
                                     <Image
-                                    className='absolute top-3 left-1'
+                                        className='absolute top-3 left-1'
                                         src='/icons/videocam.svg'
                                         alt="icon"
                                         width={20}
@@ -334,15 +358,15 @@ const HomePage = () => {
                                 </p>
 
                                 <p className='flex flex-row ml-4'>
-                                <Image
-                                className='absolute top-12 left-1'
+                                    <Image
+                                        className='absolute top-12 left-1'
                                         src='/icons/message.svg'
                                         alt="icon"
                                         width={20}
                                         height={20}
                                     />1 X Priority Dm - Resume review</p>
                                 <p className='flex flex-row ml-4'>
-                                <Image
+                                    <Image
                                         className='absolute top-19 left-1'
                                         src='/icons/webinar.svg'
                                         alt="icon"
