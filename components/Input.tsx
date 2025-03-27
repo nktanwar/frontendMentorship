@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import Image from "next/image";
 
 
-export default function TextBox({ setIsActive }) {
+interface MyComponentProps {
+    setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function TextBox({ setIsActive }: MyComponentProps) {
     const [images, setImages] = useState<File[]>([]);
     const [text, setText] = useState("");
 

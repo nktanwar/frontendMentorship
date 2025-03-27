@@ -5,7 +5,6 @@ import Image from "next/image";
 import TextBox from "@/components/Input";
 
 
-
 const props = {
 
     title: 'Resume Review',
@@ -26,7 +25,7 @@ const props = {
 
 export default function page() {
     const router = useRouter();
-    const [isActive, setIsActive] = useState(false);
+    const [isActive, setIsActive] = useState<boolean>(false);
 
     return (
         <div>
