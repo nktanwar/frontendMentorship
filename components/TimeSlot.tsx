@@ -34,11 +34,11 @@ const TimeSlotComponent: React.FC<TimeSlotComponentProps> = ({ dateCurrent }) =>
       {timeSlots.map((time, index) =>
         index % 2 === 0 ? (
           <div key={index} className="flex w-[408px] h-[32px] gap-[12px] mb-2 p-1">
-            <button className="w-[200px] h-[32px] border border-gray-400 rounded-md">
+            <button className="w-[200px] h-[32px] border border-gray-400 rounded-md  hover:border-gray-900 hover:border-2 ">
               {timeSlots[index]}
             </button>
             {timeSlots[index + 1] && (
-              <button className="w-[200px] h-[32px] border border-gray-400 rounded-md">
+              <button className="w-[200px] h-[32px] border border-gray-400 rounded-md hover:border-gray-900 hover:border-2 ">
                 {timeSlots[index + 1]}
               </button>
             )}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from "next/image";
 import Calendar from './Calender';
-import TimeSlotComponent from './Test';
+import TimeSlotComponent from './TimeSlot';
 
 export default function Slot() {
     const [selectedDate, setSelectedDate] = useState(new Date()); // Store selected date
@@ -45,7 +45,7 @@ export default function Slot() {
                     </button>
                 </div>
                 {down && (
-                    <div className='bg-white rounded-xl w-[950px] h-[200px] absolute top-15 left-1  border-2 border-amber-300'>
+                    <div className='bg-white rounded-xl w-[950px] h-[200px] absolute top-15 left-1  border-2cd'>
                         Other time zones
 
                     </div>

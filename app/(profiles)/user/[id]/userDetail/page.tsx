@@ -28,8 +28,8 @@ export default function page() {
     const router = useRouter();
     return (
         <div>
-            <div className=' flex flex-col w-full h-[530px]  border-[2px] border-[#E2E8F0]  mx-auto    '>
-                <div className="flex flex-row mt-10">
+            <div className=' flex flex-col w-full h-[530px]  border-[2px] border-[#E2E8F0]  '>
+                <div className="flex flex-row mt-10 ">
                     <div className='flex flex-row gap-1 '>
                         <button
                             onClick={() => {
@@ -53,7 +53,7 @@ export default function page() {
 
 
                 {/* similar to card */}
-                <div className="mt-8 ml-[90px]">
+                <div className="mt-8 ml-[90px] ">
                     <div className="w-[1128px] h-[344px] border-2 border-solid rounded-[12px] border-[#CBD5E1] pl-[24px] pt-[24px] font-dm-sans shadow-[0px_4px_6px_rgba(0,0,0,0.1)]">
                         <div className="w-[406px] h-[200px] ">
 
