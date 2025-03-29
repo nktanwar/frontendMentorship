@@ -19,7 +19,7 @@ export default function MentorCard({ name, src, onPress, jobTitle, desc }: Mento
     return (
 
 
-        <div className="w-auto h-[216px] bg-[#FFFFFF] p-6 flex rounded-[12px] border border-[#CBD5E1] text-[#334155] font-dm-sans shadow-[0px_4px_6px_rgba(0,0,0,0.1)] ">
+        <div className="w-auto h-[216px] bg-[#FFFFFF] p-6 flex rounded-[12px] border border-[#CBD5E1] text-[#334155] font-dmsans shadow-[0px_4px_6px_rgba(0,0,0,0.1)] ">
 
             <Image src={src} alt="Mentor" width={180} height={160} />
 
@@ -35,12 +35,12 @@ export default function MentorCard({ name, src, onPress, jobTitle, desc }: Mento
                         >View Profile</button>
                     </div>
 
-                    <div className="text-[18px] font-medium font-dm-sans"
+                    <div className="text-[18px] font-medium font-dmsans"
                     >{jobTitle}</div>
                 </div>
 
 
-                <div className="h-[96px] bg-[#F1F5F9] p-3 rounded-[6px] gap-[10px] text-[14px] font-medium font-dm-sans">{desc}</div>
+                <div className="h-[96px] bg-[#F1F5F9] p-3 rounded-[6px] gap-[10px] text-[14px] font-medium font-dmsans">{desc}</div>
             </div>
         </div>
 

@@ -18,7 +18,7 @@ interface CardProps{
 
 export default function BCards(props:CardProps) {
     return (
-        <div className="w-[528px] h-[538px] border-1 border-solid rounded-[12px] border-[#CBD5E1] pl-[24px] pt-[24px] font-dm-sans shadow-[0px_4px_6px_rgba(0,0,0,0.1)]">
+        <div className="w-[528px] h-[538px] border-1 border-solid rounded-[12px] border-[#CBD5E1] pl-[24px] pt-[24px] font-dmsans shadow-[0px_4px_6px_rgba(0,0,0,0.1)]">
             <div className='p-1 mb-3'>
                 <Image
                 src={props.img} 

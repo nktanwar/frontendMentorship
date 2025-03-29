@@ -3,6 +3,22 @@ import "./globals.css";
 import SidePanel from "@/components/Side";
 import NavBar from "@/components/Nav";
 
+import { DM_Sans, Montserrat } from 'next/font/google';
+
+// Importing DM Sans
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'], 
+  variable: '--font-dmsans', 
+});
+
+// Importing Montserrat
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'], 
+  variable: '--font-montserrat', 
+});
+
 
 export default function RootLayout({
   children,
@@ -10,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${dmSans.variable} ${montserrat.variable}`}>
       <body
         className="bg-[#ffffff] m-0 p-0"
       >

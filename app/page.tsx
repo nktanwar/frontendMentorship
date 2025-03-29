@@ -181,7 +181,7 @@ export default function MentorPage() {
             {/* Navbar */}
             <div className="bg-[#DBEAFE] w-full h-[64px] pt-[16px] pb-[16px] pl-[106px] pr-[106px]">
                 <div className="flex flex-row justify-between w-full h-[32px] items-center">
-                    <div className="font-Monsterrat font-medium text-[24px] text-[#334155] text-center h-[32px]">
+                    <div className="font-monsterrat font-medium text-[24px] text-[#334155] text-center h-[32px]">
                         Mentors
                     </div>
                     <button className="bg-[#ffffff] text-[#334155] w-[136px] h-[28px] rounded-sm font-[600] text-[12px] text-center">

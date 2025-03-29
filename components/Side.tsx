@@ -8,7 +8,7 @@ export default function SidePanel() {
     const [expanded, setExpanded] = useState(false);
     const router = useRouter();
 
-    const panelWidth = expanded ? 'w-[197px]' : 'w-[112px]';
+    const panelWidth = expanded ? 'w-[175px]' : 'w-[110px]';
 
     const images = [
         { src: '/Tab/mentor.svg', alt: 'mentor', label: 'Mentor',route:'/mentors' },

@@ -22,7 +22,7 @@ interface CardProps{
 
 export default function Cards(props:CardProps) {
     return (
-        <div className="w-[528px] h-[258px] border-1 border-solid rounded-[12px] border-[#CBD5E1] pl-[24px] pt-[24px] font-dm-sans shadow-[0px_4px_6px_rgba(0,0,0,0.1)]">
+        <div className="w-[528px] h-[258px] border-1 border-solid rounded-[12px] border-[#CBD5E1] pl-[24px] pt-[24px] font-dmsans shadow-[0px_4px_6px_rgba(0,0,0,0.1)]">
             <div className="w-[406px] h-[200px] ">
 
                 <div className="w-[479px] h-[112px]  ">

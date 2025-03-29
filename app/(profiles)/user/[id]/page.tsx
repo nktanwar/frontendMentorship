@@ -206,11 +206,11 @@ const HomePage = () => {
     }
 
     return (
-        <div className="w-full h-full">
-            <div className=' flex flex-row w-full h-[230px] border-[2px] border-[#E2E8F0] justify-center items-center mb-8  '>
+        <div className="w-full h-full ">
+            <div className=' flex flex-row w-full max-w-1200 h-[230px] border-[2px] border-[#E2E8F0] justify-center items-center mb-8  '>
 
 
-                <div className="w-[1200px] h-[246px]  p-8 flex rounded-[12px]  text-[#334155] font-dm-sans gap-3 ">
+                <div className="w-[1200px] h-[246px]  p-8 flex rounded-[12px]  text-[#334155] font-dmsans gap-3 ">
 
                     <Image src={user.src} alt="Mentor" width={220} height={220} />
 
@@ -248,23 +248,23 @@ const HomePage = () => {
 
                             </div>
 
-                            <div className="text-[18px] font-medium font-dm-sans"
+                            <div className="text-[18px] font-medium font-dmsans"
                             >{user.jobTitle}</div>
                         </div>
 
 
-                        <div className="h-[96px] bg-[#F1F5F9] p-3 rounded-[6px] gap-[10px] text-[14px] font-medium font-dm-sans">{user.desc}</div>
+                        <div className="h-[96px] bg-[#F1F5F9] p-3 rounded-[6px] gap-[10px] text-[14px] font-medium font-dmsans">{user.desc}</div>
 
                     </div>
                 </div>
 
             </div>
 
-            <div className='text-[#0F172A] font-[450] font-Montserrat text-[26px] flex flex-row justify-start ml-[150px] mb-8' >
+            <div className='text-[#0F172A] font-[450] font-montserrat text-[26px] flex flex-row justify-start ml-[150px] mb-8' >
                 Services
             </div>
 
-            <div className='ml-[150px] '>
+            <div className='ml-36 '>
                 <div className='bg-[#F1F5F9] w-[796px] rounded-xl flex flex-row justify-between p-2 mb-7'>
                     <button className='w-[124px] h-[28px] gap-[12px] py-[4px] px-[12px] rounded-[4px] hover:bg-white text-[#64748B]' onClick={() => {
                         HandleNavClicks(0);
@@ -399,7 +399,7 @@ const HomePage = () => {
                 {/* reviews */}
 
                 <div className=' border-t-2 border-[#E2E8F0] mb-8 p-1'>
-                    <div className='text-[#0F172A] font-[450] font-Montserrat mb-3 text-[28px]'>Reviews</div>
+                    <div className='text-[#0F172A] font-[500] font-montserrat mb-3 text-[28px]'>Reviews</div>
                     <div>
                         <span className=' flex flex-row mb-7 font-[500] p-1 text-[#64748B]'>
                             {reviews.length} Reviews  |

@@ -28,7 +28,7 @@ export default function page() {
     const [isActive, setIsActive] = useState<boolean>(false);
 
     return (
-        <div>
+        <div >
             <div className=' flex flex-col w-full h-[530px]  border-[2px] border-[#E2E8F0]  mx-auto    '>
                 <div className="flex flex-row mt-10">
                     <div className='flex flex-row gap-1 '>
@@ -38,12 +38,12 @@ export default function page() {
 
                             }}
                         >
-                            <div className='text-[#64748B] font-DM_sans font-[500] flex flex-row'>
+                            <div className='text-[#64748B] font-dmsans font-[500] flex flex-row'>
                                 <Image src='/icons/vector.svg'
                                     className="  text-[#334155] "
                                     alt="back" width={16} height={16} /> Back</div>
                         </button>
-                        <div className=" text-[#64748B] font-[600] ml-10 text-3xl flex flex-row gap-2 justify-start items-center">Johny Rose <Image
+                        <div className=" text-[#64748B] font-[600] ml-27 text-3xl flex flex-row gap-2 justify-start items-center">Johny Rose <Image
                             src='/icons/verify.svg' alt='verify' height={20} width={20}
                         ></Image> </div>
 
@@ -55,8 +55,8 @@ export default function page() {
 
 
                 {/* similar to card */}
-                <div className="mt-8 ml-[90px]">
-                    <div className="w-[1128px] h-[344px] border-2 border-solid rounded-[12px] border-[#CBD5E1] pl-[24px] pt-[24px] font-dm-sans shadow-[0px_4px_6px_rgba(0,0,0,0.1)]">
+                <div className="mt-8 mx-auto max-w-[1128px] px-4 ">
+                    <div className="w-[1128px] h-[344px] border-2 border-solid rounded-[12px] border-[#CBD5E1] pl-[24px] pt-[24px] font-dmsans shadow-[0px_4px_6px_rgba(0,0,0,0.1)]">
                         <div className="w-[406px] h-[200px] ">
 
                             <div className="w-[1079px] h-[112px]  ">
@@ -73,7 +73,7 @@ export default function page() {
                             </div>
 
 
-                            <div className="text-[#64748B] font[450] text-[16px] mb-3">
+                            <div className="text-[#64748B] font[500] text-[16px] mb-3">
                                 Assist you with
                             </div>
 
@@ -155,13 +155,13 @@ export default function page() {
             </div>
 
             {/* slot */}
-            <div className="mt-8 ml-[90px]  ">
+            <div className="mt-8 mx-auto max-w-[1128px] px-4  ">
 
                 <div>
                     <TextBox setIsActive={setIsActive} />
                 </div>
             </div>
-            <div className="h-[60px] w-[150px] ml-[1100px] mt-3  ">
+            <div className="w-full mt-3 flex justify-end  pr-30">
                 <button
                     className={`p-4  w-[115px] h-[42px] rounded-xl flex flex-row justify-center items-center  
                     ${isActive ? "bg-[#334155] text-white" : "bg-[#E2E8F0] text-[#94A3B8]"}`}
