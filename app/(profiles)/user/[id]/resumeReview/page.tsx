@@ -39,7 +39,7 @@ export default function page() {
                             }}
                         >
                             <div className='text-[#64748B] font-dmsans font-[500] flex flex-row'>
-                                <Image src='/icons/vector.svg'
+                                <Image src='/icons/Vector.svg'
                                     className="  text-[#334155] "
                                     alt="back" width={16} height={16} /> Back</div>
                         </button>

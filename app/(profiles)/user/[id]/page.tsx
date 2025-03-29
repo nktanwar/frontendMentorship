@@ -260,11 +260,11 @@ const HomePage = () => {
 
             </div>
 
-            <div className='text-[#0F172A] font-[450] font-montserrat text-[26px] flex flex-row justify-start ml-[150px] mb-8' >
+            <div className='text-[#0F172A] font-[450] font-montserrat text-[26px] flex flex-row justify-start mx-auto max-w-[1128px] px-4  mb-8' >
                 Services
             </div>
 
-            <div className='ml-36 '>
+            <div className='mx-auto max-w-[1128px] px-4  '>
                 <div className='bg-[#F1F5F9] w-[796px] rounded-xl flex flex-row justify-between p-2 mb-7'>
                     <button className='w-[124px] h-[28px] gap-[12px] py-[4px] px-[12px] rounded-[4px] hover:bg-white text-[#64748B]' onClick={() => {
                         HandleNavClicks(0);
