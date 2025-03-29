@@ -19,7 +19,7 @@ export default function MentorCard({ name, src, onPress, jobTitle, desc }: Mento
     return (
 
 
-        <div className="max-w-1200 h-[216px] bg-[#FFFFFF] p-6 flex rounded-[12px] border border-[#CBD5E1] text-[#334155] font-dmsans shadow-[0px_4px_6px_rgba(0,0,0,0.1)] ">
+        <div className="max-w-1100 h-[216px] bg-[#FFFFFF] p-6 flex rounded-[12px] border border-[#CBD5E1] text-[#334155] font-dmsans shadow-[0px_4px_6px_rgba(0,0,0,0.1)] ">
 
             <Image src={src} alt="Mentor" width={180} height={160} />
 
